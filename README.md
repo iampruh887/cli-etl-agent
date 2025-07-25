@@ -20,7 +20,7 @@ This project contains a privacy-aware, Dockerized ETL (Extract, Transform, Load)
 
 ```bash
 git clone https://github.com/iampruh887/cli-etl-agent.git
-cd cli-autoetl-agent
+cd cli-etl-agent
 ```
 
 ---
@@ -30,7 +30,7 @@ cd cli-autoetl-agent
 Place your CSV files in the following directory:
 
 ```bash
-cli_autoetl_agent/deploy/data/
+cli-etl-agent/deploy/data/
 ```
 
 Example:
