@@ -19,11 +19,9 @@ This project contains a privacy-aware, Dockerized ETL (Extract, Transform, Load)
 ### ♻️ 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/etl-agent.git
-cd etl-agent/cli_autoetl_agent
+git clone https://github.com/iampruh887/cli-etl-agent.git
+cd cli-autoetl-agent
 ```
-
-Replace `YOUR_USERNAME` with your actual GitHub username.
 
 ---
 
@@ -57,8 +55,6 @@ cp deploy/.env.example deploy/.env
 ```env
 GEMINI_API_KEY=your_api_key_here
 ```
-
-> 🔗 Get your key from: [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
 
 ---
 
@@ -145,7 +141,8 @@ docker run -it --rm \
 
 * Docker
 * Docker Compose
-* Gemini API Key: [https://makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey)
+* Gemini API Key: [https://aistudio.google.com/apikey](https://aistudio.google.com/apikey)
+
 
 ---
 
@@ -157,4 +154,4 @@ This project is licensed under the MIT License.
 
 ## 🧠 Credits
 
-Built with ❤️ by [Your Name](https://github.com/YOUR_USERNAME)
+Built with ❤️ by [iampruh887](https://github.com/iampruh887)
