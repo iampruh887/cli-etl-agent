@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   etl-agent:
-    image: yourdockerhubusername/etl-agent:latest
+    image: iampruh887/etl-agent:latest
     container_name: etl-agent
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
@@ -15,7 +15,7 @@ services:
     command: --help
 
   etl-agent-interactive:
-    image: yourdockerhubusername/etl-agent:latest
+    image: iampruh887/etl-agent:latest
     container_name: etl-agent-interactive
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
