@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  etl-agent:
+    image: yourdockerhubusername/etl-agent:latest
+    container_name: etl-agent
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./data:/app/data:ro
+      - ./output:/app/output
+      - ./logs:/app/logs
+    stdin_open: true
+    tty: true
+    command: --help
+
+  etl-agent-interactive:
+    image: yourdockerhubusername/etl-agent:latest
+    container_name: etl-agent-interactive
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./data:/app/data:ro
+      - ./output:/app/output
+      - ./logs:/app/logs
+    stdin_open: true
+    tty: true
+    entrypoint: ["/bin/bash"]
