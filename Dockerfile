@@ -15,6 +15,9 @@ COPY requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip uninstall numpy spacy thinc -y
+RUN pip install numpy --upgrade
+RUN pip install spacy --upgrade
 
 # Copy application code
 COPY improved_etl.py .
@@ -31,7 +34,6 @@ ENV PYTHONPATH=/app
 RUN useradd --create-home --shell /bin/bash etl_user && \
    chown -R etl_user:etl_user /app
 USER etl_user
-
-# Default command
+>
 ENTRYPOINT ["python", "improved_etl.py"]
 CMD ["--help"]
